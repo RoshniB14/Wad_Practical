@@ -1,0 +1,120 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="themes/wad_practical_6.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	
+	
+	
+<!-- Main Page -->
+<div data-role="page" id="mainPage">
+    <!-- Header -->
+    <div data-role="header">
+        <h1>My Mobile App</h1>
+    </div>
+
+    <!-- Navbar -->
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#mainPage" class="ui-btn-active">Home</a></li>
+            <li><a href="#aboutPage" data-transition="slide">About</a></li>
+            <li><a href="#contactPage" data-transition="fade">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div data-role="content">
+        <h2>Welcome</h2>
+		<div mbsc-card>
+			<img src="https://img.mobiscroll.com/demos/card_2.png">
+			<div class="mbsc-card-header">
+				<h2 class="mbsc-card-title">Best animal adventure</h2>
+			</div>
+			<div class="mbsc-card-content">
+				A young panda tests his climbing skills at the Chengdu Research Base.
+			</div>
+			<div class="mbsc-card-footer">
+				<button class="mbsc-btn-flat">Share</button>
+				<button class="mbsc-btn-flat">Explore</button>
+			</div>
+		</div>
+		
+		<div class="md-card-bg" mbsc-card>
+			<img src="https://img.mobiscroll.com/demos/card_6.png">
+			<h2 class="md-card-title mbsc-align-center">Las Vegas</h2>
+			<h5 class="md-card-subtitle mbsc-align-center mbsc-bold">63 apartments available</h5>
+		</div>
+		
+		<div mbsc-card>
+			<img class="mbsc-img-thumbnail mbsc-pull-right" width="90" height="90" src="https://img.mobiscroll.com/demos/card_3.png">
+			<div class="mbsc-card-header">
+				<div class="mbsc-card-title">Best places</div>
+			</div>
+			<div class="mbsc-card-content"> A view across the Turnagain Arm on Alaska's Kenai Peninsula.
+			</div>
+		</div>
+		
+		<div mbsc-card>
+			<div class="mbsc-card-header">
+				<h2 class="mbsc-card-title">15 minutes to work</h2>
+			</div>
+			<img src="https://img.mobiscroll.com/demos/route.png">
+			<div class="mbsc-card-content mbsc-btn-group-block">
+				
+			</div>
+		</div>
+    </div>
+
+    <!-- Footer -->
+    <div data-role="footer">
+        <h4>© 2025 My App</h4>
+    </div>
+</div>
+
+<!-- About Page -->
+<div data-role="page" id="aboutPage">
+    <div data-role="header"><h1>About Us</h1></div>
+    <div data-role="content">
+        <p>About Page Content</p>
+        <a href="#mainPage" data-role="button" data-transition="slide" data-direction="reverse">Back</a>
+    </div>
+</div>
+
+<!-- Contact Page -->
+<div data-role="page" id="contactPage">
+    <div data-role="header"><h1>Contact Us</h1></div>
+    <div data-role="content">
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name">
+			<label for="email">Email:</label>
+			<input type="email" id="email">
+			<input type="submit" value="Submit">
+		</form>
+        <a href="#mainPage" data-role="button" data-transition="fade" data-direction="reverse">Back</a>
+    </div>
+	 
+	 
+</div>
+
+<!-- Popup -->
+<div data-role="popup" id="popupDialog">
+    <p>This is a popup message!</p>
+</div>
+
+<!-- Side Panel -->
+<div data-role="panel" id="mypanel">
+    <p>Side Navigation Panel</p>
+    <a href="#" data-role="button" data-rel="close">Close</a>
+</div>
+	</body>
+	
+</body>
+</html>
