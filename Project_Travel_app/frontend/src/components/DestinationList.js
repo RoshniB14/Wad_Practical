@@ -1,49 +1,4 @@
-// import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
-// import { Link } from 'react-router-dom';
 
-// function DestinationList() {
-//   const [destinations, setDestinations] = useState([]);
-//   const [error, setError] = useState(null);
-
-//   useEffect(() => {
-//     const fetchDestinations = async () => {
-//       try {
-//         const response = await axios.get('http://localhost:5000/api/destinations');
-//         setDestinations(response.data);
-//       } catch (error) {
-//         setError('Failed to load destinations');
-//       }
-//     };
-//     fetchDestinations();
-//   }, []);
-
-//   if (error) {
-//     return <p>{error}</p>;
-//   }
-
-//   return (
-//     <div>
-//       <h2>Destination List</h2>
-//       <Link to="/add-destination">Add New Destination</Link>
-//       {destinations.length === 0 ? (
-//         <p>No destinations available.</p>
-//       ) : (
-//         <ul>
-//           {destinations.map((destination) => (
-//             <li key={destination._id}>
-//               <h3>{destination.name}</h3>
-//               <p>Location: {destination.location}</p>
-//               <p>Description: {destination.description}</p>
-//             </li>
-//           ))}
-//         </ul>
-//       )}
-//     </div>
-//   );
-// }
-
-// export default DestinationList;
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
