@@ -1,17 +1,4 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import './Home.css';
-// function Home() {
-//   return (
-//     <div className="home-container">
-//       <h1>Welcome to Travel App</h1>
-//       <Link to="/add-destination">Add New Destination</Link>
-//       <Link to="/destinations">View Destinations</Link>
-//     </div>
-//   );
-// }
 
-// export default Home;
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaMapMarkedAlt, FaPlusCircle } from 'react-icons/fa';
